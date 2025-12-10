@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('./fonts/LeagueSpartan-Bold.ttf') format('woff2');
+  font-weight: 700;
+  font-style: bold;
+}
+
+body{
+    background-color: #3B4664;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'League Spartan';
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+.calculation-tab{
+    max-width: 400px;
+    height: 100px;
+    background-color: #181F32;
+    color: #FCFCFA;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 3rem;
+    padding-right: 25px;
+}
+
+.calculator-buttons{
+    max-width: 400px;
+    height: 350px;
+    background-color: #252D44;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button {
+    width: 80px;
+    height: 45px;
+    background-color: #EAE3DB;
+    color: #444A5E;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px 0 #b8af9f;
+    font-size: 2rem;
+    font-family: 'League Spartan';
+    padding-top: 5px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.reset-button,
+.equal-button,
+.delete-button {
+    color: #fff;
+    font-size: 1.4rem;
+    padding-top: 3px;
+}
+
+.equal-button {
+    grid-column: 3 / span 2;
+    width: 170px;
+    background-color: #D13F30;
+    box-shadow: 0 3px 0 #902416;
+}
+
+.reset-button {
+    grid-column: 1 / span 2;
+    width: 170px;
+    background-color: #647299;
+    box-shadow: 0 3px 0 #4A567E;
+}
+
+.delete-button {
+    background-color: #647299;
+    box-shadow: 0 3px 0 #424E73;
+}
