@@ -105,3 +105,24 @@ button:active {
     background-color: #647299;
     box-shadow: 0 3px 0 #424E73;
 }
+
+@media (max-width: 500px) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculation-tab,
+.calculator-buttons{
+    width: 390px;
+}
+
+.calculator-buttons{
+    padding: 15px 10px 10px 15px;
+}
+
+button{
+    width: 74px;
+}
+}
