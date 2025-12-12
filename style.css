@@ -115,7 +115,7 @@ button:active {
 
 .calculation-tab,
 .calculator-buttons{
-    width: 375px;
+    width: 360px;
 }
 
 .calculator-buttons{
@@ -123,6 +123,11 @@ button:active {
 }
 
 button{
-    width: 74px;
+    width: 70px;
+}
+
+.equal-button,
+.reset-button{
+    width:160px;
 }
 }
